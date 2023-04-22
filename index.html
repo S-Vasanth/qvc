@@ -1,506 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Construction Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction Website</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
 
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-</head>
-<body>
-   
-<!-- header section starts  -->
+    <header class="header" id="header">
+      <img
+        id="logo"
+        width="100px"
+        height="75px"
+        src="images/qvclogo.png"
+      /><br />
+      <!-- <span>Quality Value concept</span> -->
+      <!-- <a  class="logo"><span><b>QVC</b></span></a> -->
 
-<header class="header">
-   <img width="100px" height="75px" src="images/qvclogo.png"><br>
-   <!-- <span>Quality Value concept</span> -->
-   <!-- <a  class="logo"><span><b>QVC</b></span></a> -->
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <div class="dropdown">
+          <a
+            onclick="myFunction()"
+            onmouseover="myFunction()"
+            class="dropbtn"
+            style="display: inline; padding: 0"
+            >about<i style="margin-left: 0.5rem" class="fa fa-caret-down"></i
+          ></a>
+          <div id="myDropdown" class="dropdown-content">
+            <a style="font-size: 12px" href="history.html#history"
+              ><b>History</b></a
+            >
+            <a style="font-size: 12px" href="history.html#quality"
+              ><b>Quality,Value&Concept</b></a
+            >
+            <a style="font-size: 12px" href="history.html#Certification"
+              ><b>Certification</b></a
+            >
+          </div>
+        </div>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
 
-   <nav class="navbar">
-      <a href="#home">home</a>
-      <a href="#about"></a>
-      <div class="dropdown">
-         <a onclick="myFunction()" onmouseover="myFunction()" class="dropbtn">about <i   class="fa fa-caret-down"></i><a>
-           
-         <div id="myDropdown" class="dropdown-content">
-           <a style="font-size:12px" href="history.html#history"><b>History</b></a>
-           <a style="font-size:12px" href="history.html#quality"><b>Quality,Value&Concept</b></a>
-           <a style="font-size:12px" href="history.html#Certification"><b>Certification</b></a>
-         </div>
-       </div>
-      <a href="#services">services</a>
-      <a href="#projects">projects</a>
-      <!-- <a href="#pricing">pricing</a> -->
-      <a href="#contact">contact</a>
-       <a href="#blogs">blogs</a> 
-   </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
 
-   <div class="icons">
-      <div id="menu-btn" class="fas fa-bars"></div>
-       <div id="info-btn" class="fas fa-info-circle"></div>
-      <div id="search-btn" class="fas fa-search"></div>
-      <div id="login-btn" class="fas fa-user"></div> 
-   </div>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
 
-    <form action="" class="search-form">
-      <input type="search" name="" placeholder="search here..." id="search-box">
-      <label for="search-box" class="fas fa-search"></label>
-   </form> 
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
 
-   
+      <div class="info">
+        <i class="fas fa-phone"></i>
+        <!-- <h3>phone number</h3> -->
+        <p>+65 82993771</p>
+        <p>+65 63008948</p>
+      </div>
 
-</header>
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <!-- <h3>email address</h3> -->
+        <p><b>Mail:</b>qvcencpl@gmail.com</p>
+        <p><b>Fax:</b>+65 62577563</p>
+      </div>
 
-<div class="contact-info">
-
-   <div id="close-contact-info" class="fas fa-times"></div>
-
-   <div class="info">
-      <i class="fas fa-phone"></i>
-      <!-- <h3>phone number</h3> -->
-      <p>+65 82993771</p>
-      <p>+65 63008948</p>
-
-   </div>
-
-   <div class="info">
-      <i class="fas fa-envelope"></i>
-      <!-- <h3>email address</h3> -->
-      <p><b>Mail:</b>qvcencpl@gmail.com</p>
-      <p><b>Fax:</b>+65 62577563</p>
-
-   </div>
-
-   <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <!-- <h3>office address</h3> -->
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <!-- <h3>office address</h3> -->
         <p>West Connect building</p>
-         <p>#04-22</p>
-         <p>10 Buroh Street</p>
-         <p>Singapore-627564</p>
-        
-   </div>
+        <p>#04-22</p>
+        <p>10 Buroh Street</p>
+        <p>Singapore-627564</p>
+      </div>
+    </div>
 
-   
+    <!-- header section ends -->
 
-</div>
+    <!-- home section starts  -->
 
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-   <div class="swiper home-slider">
-
-      <div class="swiper-wrapper">
-         <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-2.jpg) no-repeat"
+          >
             <div class="content">
-            <!-- <h6>Quality Value Concept Engineering & Construction</h6> -->
+              <!-- <h6>Quality Value Concept Engineering & Construction</h6> -->
 
-               <h3 style="color:hsl(26, 91%, 55%);">QVC</h3><h3>Engineering & Construction PTE. LTD.</h3>
-               <p>A leading Engineering & Construction company dedicated to delivering exceptional building solutions. With 12+ years of experience, our team of experts offers a wide range of services, including design, construction, project management, and consulting services.
- we pride ourselves on our commitment to quality, safety, and customer satisfaction. Our experienced professionals use the latest technologies and techniques to ensure that each project is completed on time, within budget, and to the highest standards.</p>
-               <a href="#about" class="btn">get started</a>
+              <h3 style="color: hsl(26, 91%, 55%)">QVC</h3>
+              <h3>Engineering & Construction PTE. LTD.</h3>
+              <p>
+                A leading Engineering & Construction company dedicated to
+                delivering exceptional building solutions. With 12+ years of
+                experience, our team of experts offers a wide range of services,
+                including design, construction, project management, and
+                consulting services. we pride ourselves on our commitment to
+                quality, safety, and customer satisfaction. Our experienced
+                professionals use the latest technologies and techniques to
+                ensure that each project is completed on time, within budget,
+                and to the highest standards.
+              </p>
+              <a href="#about" class="btn">get started</a>
             </div>
-         </section>
+          </section>
 
-         <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-1.jpg) no-repeat"
+          >
             <div class="content">
-               <h3>making dream come to life</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-               <a href="#about" class="btn">get started</a>
+              <h3>making dream come to life</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aspernatur beatae iusto pariatur laborum magnam eos!
+              </p>
+              <a href="#about" class="btn">get started</a>
             </div>
-         </section>
+          </section>
 
-         <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-3.jpg) no-repeat"
+          >
             <div class="content">
-               <h3>from concept to creation</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-               <a href="#about" class="btn">get started</a>
+              <h3>from concept to creation</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aspernatur beatae iusto pariatur laborum magnam eos!
+              </p>
+              <a href="#about" class="btn">get started</a>
             </div>
-         </section>
+          </section>
+        </div>
 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+
+      <div class="row">
+        <div class="video">
+          <img width="400px" height="400px" src="images/aboutus.jpeg" />
+        </div>
+
+        <div class="content">
+          <h3>We will provide you the best work which you dreamt for!</h3>
+          <p>
+            construction system that uses steel as the main material for
+            building structural elements, such as columns, beams, trusses, and
+            frames. Steel structures are known for their strength, durability,
+            and versatility, and are commonly used for a wide range of
+            applications, including commercial and industrial buildings,
+            bridges, and other infrastructure projects. They can also be
+            designed to be aesthetically pleasing, with a variety of finishes
+            and cladding options available.
+          </p>
+          <a href="#services" class="btn">read more</a>
+        </div>
       </div>
 
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="box-container">
+        <div class="box">
+          <h3>12+</h3>
+          <p>years of experience</p>
+        </div>
 
-   </div>
+        <div class="box">
+          <h3>700+</h3>
+          <p>project completed</p>
+        </div>
 
-</section>
+        <div class="box">
+          <h3>100+</h3>
+          <p>satiesfied clients</p>
+        </div>
 
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-   <h1 class="heading"> about us </h1>
-
-   <div class="row">
-
-      <div class="video">
-         <img width="400px"  height="400px" src="images/aboutus.jpeg" >
+        <div class="box">
+          <h3>70+</h3>
+          <p>active workers</p>
+        </div>
       </div>
+    </section>
 
-      <div class="content">
-         <h3>We will provide you the best work which you dreamt for!</h3>
-         <p> construction system that uses steel as the main material for building structural elements, such as columns, beams, trusses, and frames. Steel structures are known for their strength, durability, and versatility, and are commonly used for a wide range of applications, including commercial and industrial buildings, bridges, and other infrastructure projects. They can also be designed to be aesthetically pleasing, with a variety of finishes and cladding options available.</p>
-         <a href="#services" class="btn">read more</a>
-      </div>
+    <!-- about section ends -->
 
-   </div>
+    <!-- services section starts  -->
 
-   <div class="box-container">
+    <section class="services" id="services">
+      <h1 class="heading">our services</h1>
 
-      <div class="box">
-         <h3>12+</h3>
-         <p>years of experience</p>
-      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/service-1.png" alt="" />
+          <h3>building construction</h3>
+          <p>
+            The process of planning, designing, and constructing structures such
+            as residential and commercial buildings, bridges, and other
+            infrastructure
+          </p>
+        </div>
 
-      <div class="box">
-         <h3>700+</h3>
-         <p>project completed</p>
-      </div>
+        <div class="box">
+          <img src="images/service-2.png" alt="" />
+          <h3>house renovation</h3>
+          <p>
+            It include repairing, remodeling, or upgrading various aspects such
+            as the structure, layout, design, systems, and functionality, to
+            enhance its value, comfort, and appeal.
+          </p>
+        </div>
 
-      <div class="box">
-         <h3>100+</h3>
-         <p>satiesfied clients</p>
-      </div>
+        <div class="box">
+          <img src="images/service-3.png" alt="" />
+          <h3>architechture design</h3>
+          <p>
+            Architecture design refers to the process of creating the
+            conceptual, aesthetic, and functional design of buildings,
+            structures, and other physical environments, taking into
+            consideration factors such as sustainability, safety, accessibility,
+            and usability
+          </p>
+        </div>
 
-      <div class="box">
-         <h3>70+</h3>
-         <p>active workers</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-   <h1 class="heading"> our services </h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="images/service-1.png" alt="">
-         <h3>building construction</h3>
-         <p>The process of planning, designing, and constructing structures such as residential and commercial buildings, bridges, and other infrastructure </p>
-      </div>
-
-      <div class="box">
-         <img src="images/service-2.png" alt="">
-         <h3>house renovation</h3>
-         <p>It include repairing, remodeling, or upgrading various aspects such as the structure, layout, design, systems, and functionality, to enhance its value, comfort, and appeal.</p>
-      </div>
-
-      <div class="box">
-         <img src="images/service-3.png" alt="">
-         <h3>architechture design</h3>
-         <p>Architecture design refers to the process of creating the conceptual, aesthetic, and functional design of buildings, structures, and other physical environments, taking into consideration factors such as sustainability, safety, accessibility, and usability</p>
-      </div>
-
-      <!-- <div class="box">
+        <!-- <div class="box">
          <img src="images/service-4.png" alt="">
          <h3>material supply</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
       </div> -->
 
-      <div class="box">
-         <img src="images/service-5.png" alt="">
-         <h3>construction consultant</h3>
-         <p>Whose provides expert advice, guidance, and support to clients for Construction projects such as planning, budgeting, scheduling, risk management, quality control, and project delivery, within budget.</p>
+        <div class="box">
+          <img src="images/service-5.png" alt="" />
+          <h3>construction consultant</h3>
+          <p>
+            Whose provides expert advice, guidance, and support to clients for
+            Construction projects such as planning, budgeting, scheduling, risk
+            management, quality control, and project delivery, within budget.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/service-6.png" alt="" />
+          <h3>interior design</h3>
+          <p>
+            Interior design involves the creative process of planning,
+            designing, and decorating interior spaces to create functional and
+            visually appealing environments
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/service-7.png" alt="" />
+          <h3>addition and alteration</h3>
+          <p>
+            process of making changes or improvements to an existing building or
+            structure, such as adding new rooms, floors, or facilities,
+            modifying the layout or design, upgrading systems or equipment, or
+            renovating and repairing the building
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/service-8.png" alt="" />
+          <h3>building renovation</h3>
+          <p>
+            Building renovation refers to the process of improving, updating, or
+            restoring an existing building, by making structural or cosmetic
+            changes to enhance its functionality, appearance, and value.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="box">
-         <img src="images/service-6.png" alt="">
-         <h3>interior design</h3>
-         <p>Interior design involves the creative process of planning, designing, and decorating interior spaces to create functional and visually appealing environments</p>
-      </div>
+    <!-- services section ends -->
 
-      <div class="box">
-         <img src="images/service-7.png" alt="">
-         <h3>addition and alteration</h3>
-         <p>process of making changes or improvements to an existing building or structure, such as adding new rooms, floors, or facilities, modifying the layout or design, upgrading systems or equipment, or renovating and repairing the building</p>
-      </div>
+    <!-- projects section starts  -->
 
-      <div class="box">
-         <img src="images/service-8.png" alt="">
-         <h3>building renovation</h3>
-         <p>Building renovation refers to the process of improving, updating, or restoring an existing building, by making structural or cosmetic changes to enhance its functionality, appearance, and value.</p>
-      </div>
-      
-   </div>
+    <section class="projects" id="projects">
+      <h1 class="heading">our projects</h1>
 
-</section>
+      <div class="box-container">
+        <a href="images/aluminium.jpeg" class="box">
+          <div class="image">
+            <img src="images/aluminium.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-<!-- services section ends -->
+        <a href="images/clad.jpeg" class="box">
+          <div class="image">
+            <img src="images/clad.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-<!-- projects section starts  -->
+        <a href="images/steel.jpeg" class="box">
+          <div class="image">
+            <img src="images/steel.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-<section class="projects" id="projects">
+        <a href="images/brigde.jpeg" class="box">
+          <div class="image">
+            <img src="images/brigde.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-   <h1 class="heading"> our projects </h1>
+        <a href="images/pipe.jpeg" class="box">
+          <div class="image">
+            <img src="images/pipe.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-   <div class="box-container">
+        <a href="images/boat.jpeg" class="box">
+          <div class="image">
+            <img src="images/boat.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/aluminium.jpeg" class="box">
-         <div class="image">
-            <img src="images/aluminium.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-           
-         </div>
-      </a>
+        <a href="images/kallang.jpeg" class="box">
+          <div class="image">
+            <img src="images/kallang.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-     
-      <a href="images/clad.jpeg" class="box">
-         <div class="image">
-            <img src="images/clad.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-               
-            </div>
-         </div>
-      </a>
+        <a href="images/park.jpeg" class="box">
+          <div class="image">
+            <img src="images/park.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/steel.jpeg" class="box">
-         <div class="image">
-            <img src="images/steel.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            
-            </div>
-         </div>
-      </a>
-
-      <a href="images/brigde.jpeg" class="box">
-         <div class="image">
-            <img src="images/brigde.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
-
-      <a href="images/pipe.jpeg" class="box">
-         <div class="image">
-            <img src="images/pipe.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
-
-      <a href="images/boat.jpeg" class="box">
-         <div class="image">
-            <img src="images/boat.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
-
-       <a href="images/kallang.jpeg" class="box">
-         <div class="image">
-            <img src="images/kallang.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
-
-       <a href="images/park.jpeg" class="box">
-         <div class="image">
-            <img src="images/park.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
-
-       <a href="images/coco-cola.jpeg" class="box">
-         <div class="image">
-            <img src="images/coco-cola.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-         </div>
-      </a>
-  <a href="images/slide.jpeg" class="box">
-         <div class="image">
-            <img src="images/slide.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-               
-            </div>
-         </div>
-      </a>
+        <a href="images/coco-cola.jpeg" class="box">
+          <div class="image">
+            <img src="images/coco-cola.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
+        <a href="images/slide.jpeg" class="box">
+          <div class="image">
+            <img src="images/slide.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
         <a href="images/apd.jpeg" class="box">
-         <div class="image">
-            <img src="images/apd.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-         
-            </div>
-         </div>
-      </a>
+          <div class="image">
+            <img src="images/apd.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
         <a href="images/seletor.jpeg" class="box">
-         <div class="image">
-            <img src="images/seletor.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-         </div>
-      </a>
-    <a href="images/coco.jpg" class="box">
-         <div class="image">
-            <img src="images/coco.jpg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-            </div>
-         </div>
-      </a>
+          <div class="image">
+            <img src="images/seletor.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
+        <a href="images/coco.jpg" class="box">
+          <div class="image">
+            <img src="images/coco.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
+        <a href="images/sheet.jpeg" class="box">
+          <div class="image">
+            <img src="images/sheet.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/sheet.jpeg" class="box">
-         <div class="image">
-            <img src="images/sheet.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-           
-         </div>
-      </a>
+        <a href="images/tuas.jpeg" class="box">
+          <div class="image">
+            <img src="images/tuas.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/tuas.jpeg" class="box">
-         <div class="image">
-            <img src="images/tuas.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-           
-         </div>
-      </a>
+        <a href="images/hdb.jpeg" class="box">
+          <div class="image">
+            <img src="images/hdb.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/hdb.jpeg" class="box">
-         <div class="image">
-            <img src="images/hdb.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-              
-            </div>
-           
-         </div>
-      </a>
+        <a href="images/role.jpeg" class="box">
+          <div class="image">
+            <img src="images/role.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-      <a href="images/role.jpeg" class="box">
-         <div class="image">
-            <img src="images/role.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-             
-            </div>
-         </div>
-      </a>
+        <a href="images/roof.jpeg" class="box">
+          <div class="image">
+            <img src="images/roof.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-  
-      <a href="images/roof.jpeg" class="box">
-         <div class="image">
-            <img src="images/roof.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-           
-            </div>
-         </div>
-      </a>
+        <a href="images/glass.jpeg" class="box">
+          <div class="image">
+            <img src="images/glass.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
+        <a href="images/road.jpeg" class="box">
+          <div class="image">
+            <img src="images/road.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
 
-       <a href="images/glass.jpeg" class="box">
-         <div class="image">
-            <img src="images/glass.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-               
-            </div>
-         </div>
-      </a>
+        <a href="images/last.jpeg" class="box">
+          <div class="image">
+            <img src="images/last.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info"></div>
+          </div>
+        </a>
+      </div>
+    </section>
 
-       <a href="images/road.jpeg" class="box">
-         <div class="image">
-            <img src="images/road.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-             
-            </div>
-         </div>
-      </a>
+    <!-- projects section ends -->
 
-      <a href="images/last.jpeg" class="box">
-         <div class="image">
-            <img src="images/last.jpeg" alt="">
-         </div>
-         <div class="content">
-            <div class="info">
-             
-            </div>
-           
-         </div>
-      </a>
+    <!-- reviews section starts  -->
 
-   </div>
-
-</section>
-
-<!-- projects section ends -->
-
-<!-- reviews section starts  -->
-
-<!-- <section class="reviews">
+    <!-- <section class="reviews">
 
    <h1 class="heading"> clients reviews </h1>
 
@@ -616,11 +633,11 @@
 
 </section> -->
 
-<!-- reviews section ends -->
+    <!-- reviews section ends -->
 
-<!-- pricing section starts  -->
+    <!-- pricing section starts  -->
 
-<!-- <section class="pricing" id="pricing">
+    <!-- <section class="pricing" id="pricing">
 
    <h1 class="heading"> our pricing </h1>
 
@@ -672,89 +689,86 @@
 
 </section> -->
 
-<!-- pricing section ends -->
+    <!-- pricing section ends -->
 
-<!-- contact section starts  -->
+    <!-- contact section starts  -->
 
-<section class="contact" id="contact">
+    <section class="contact" id="contact">
+      <h1 class="heading">contact us</h1>
 
-   <h1 class="heading"> contact us </h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1641716772852!5m2!1sen!"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
 
-   <div class="row">
+        <form action="">
+          <h1 style="background-color: black" class="heading">Head office</h1>
 
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1641716772852!5m2!1sen!" allowfullscreen="" loading="lazy"></iframe>
+          <h1>West Connect building</h1>
+          <h1>#04-22</h1>
+          <h1>10 Buroh Street</h1>
+          <h1>Singapore</h1>
+          <h1>627564</h1>
 
-      <form action="">
-         <h1 style="background-color:black"class="heading">Head office</h1>
-        
-         <h1>West Connect building</h1>
-         <h1>#04-22</h1>
-         <h1>10 Buroh Street</h1>
-         <h1>Singapore</h1>
-         <h1>627564</h1>
+          <h1>Tel:<u>+65 63343503</u></h1>
+          <h1>Fax:<u>+65 62577563</u></h1>
+          <h1>Email:<u>qvcencpl@gmail.com</u></h1>
 
-         <h1>Tel:<u>+65 63343503</u></h1>
-         <h1>Fax:<u>+65 62577563</u></h1>
-         <h1>Email:<u>qvcencpl@gmail.com</u></h1>
-
-
-         <!-- <input type="text" placeholder="name" class="box">
+          <!-- <input type="text" placeholder="name" class="box">
          <input type="email" placeholder="email" class="box">
          <input type="number" placeholder="phone" class="box">
          <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
          <input type="submit" value="send message" class="btn"> -->
-      </form>
+        </form>
+      </div>
+    </section>
 
-   </div>
+    <!-- contact section ends -->
 
-</section>
+    <!-- blogs section starts  -->
 
-<!-- contact section ends -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our blogs</h1>
 
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-   <h1 class="heading"> our blogs </h1>
-
-   <div class="swiper blogs-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
             <div class="image">
-               <img src="images/glassinstal.jpeg" alt="">
+              <img src="images/glassinstal.jpeg" alt="" />
             </div>
             <div class="content">
-               <h3>Glass Installation Works</h3>
-               <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <h3>Glass Installation Works</h3>
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
                <a href="#" class="btn">read more</a> -->
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
+          <div class="swiper-slide slide">
             <div class="image">
-               <img src="images/ceil.jpeg" alt="">
+              <img src="images/ceil.jpeg" alt="" />
             </div>
             <div class="content">
-               <h3>Ceilling Panel Works</h3>
-               <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <h3>Ceilling Panel Works</h3>
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
                <a href="#" class="btn">read more</a> -->
             </div>
-         </div>
+          </div>
 
-         <div class="swiper-slide slide">
+          <div class="swiper-slide slide">
             <div class="image">
-               <img src="images/raisedfloor.jpg" alt="">
+              <img src="images/raisedfloor.jpg" alt="" />
             </div>
             <div class="content">
-               <h3>Raised Floor Works</h3>
-               <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <h3>Raised Floor Works</h3>
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
                <a href="#" class="btn">read more</a> -->
             </div>
-         </div>
+          </div>
 
-         <!-- <div class="swiper-slide slide">
+          <!-- <div class="swiper-slide slide">
             <div class="image">
                <img src="images/blog-4.jpg" alt="">
             </div>
@@ -786,18 +800,15 @@
                <a href="#" class="btn">read more</a>
             </div>
          </div>-->
+        </div>
+      </div>
+    </section>
 
-      </div> 
+    <!-- blogs section ends -->
 
-   </div>
+    <!-- client logo section starts -->
 
-</section>
-
-<!-- blogs section ends -->
-
-<!-- client logo section starts -->
-
-<!-- <section class="logo-container">
+    <!-- <section class="logo-container">
    <div class="swiper logo-slider">
       <div class="swiper-wrapper">
          <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
@@ -810,48 +821,37 @@
    </div>
 </section> -->
 
-<!-- client logo section ends -->
+    <!-- client logo section ends -->
 
-<!-- footer section starts  -->
+    <!-- footer section starts  -->
 
-<section class="footer">
+    <section class="footer">
+      <div class="links">
+        <a class="btn" href="#home">home</a>
+        <a class="btn" href="#about">about</a>
+        <a class="btn" href="#services">services</a>
+        <a class="btn" href="#projects">projects</a>
+        <!-- <a class="btn" href="#pricing">pricing</a> -->
+        <a class="btn" href="#contact">contact</a>
+        <a class="btn" href="#blogs">blogs</a>
+      </div>
 
-   <div class="links">
-      <a class="btn" href="#home">home</a>
-      <a class="btn" href="#about">about</a>
-      <a class="btn" href="#services">services</a>
-      <a class="btn" href="#projects">projects</a>
-      <!-- <a class="btn" href="#pricing">pricing</a> -->
-      <a class="btn" href="#contact">contact</a>
-      <a class="btn" href="#blogs">blogs</a>
-   </div>
+      <div class="credit">
+        created by <span>VAS.S</span> | all rights reserved!
+      </div>
+    </section>
 
-   <div class="credit"> created by <span>VAS.S</span> | all rights reserved! </div>
+    <!-- footer section ends -->
 
-</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
-<!-- footer section ends -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
 
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-<script>
-
-lightGallery(document.querySelector('.projects .box-container'));
-
-</script>
-
-</body>
+    <script>
+      lightGallery(document.querySelector(".projects .box-container"));
+    </script>
+  </body>
 </html>
