@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Construction Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction Website</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
 
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-</head>
-<body>
-   
-<!-- header section starts  -->
+    <header class="header">
+      <img width="150px" height="100px" src="images/qvcmainlogo.jpeg" />
+      <a class="logo"><span>QVC</span></a>
 
-<header class="header">
-   <img width="150px" height="100px" src="images/qvcmainlogo.jpeg">
-   <a  class="logo"><span>QVC</span></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <div class="dropdown">
+          <a
+            onclick="myFunction()"
+            onmouseover="myFunction()"
+            class="dropbtn"
+            style="display: inline; padding: 0"
+            >about<i style="margin-left: 0.5rem" class="fa fa-caret-down"></i
+          ></a>
+          <div id="myDropdown" style="padding: 0.5rem" class="dropdown-content">
+            <a style="font-size: 12px" href="history.html#history"
+              ><b>History</b></a
+            >
+            <a style="font-size: 12px" href="history.html#quality"
+              ><b>Quality,Value&Concept</b></a
+            >
+            <a style="font-size: 12px" href="history.html#Certification"
+              ><b>Certification</b></a
+            >
+          </div>
+        </div>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
 
-   <nav class="navbar">
-      <a href="index.html#home">home</a>
-      <a href="index.html#about"></a>
-      <div class="dropdown">
-         <a onclick="myFunction()" onmouseover="myFunction()" class="dropbtn">about <i   class="fa fa-caret-down"></i><a>
-           
-         <div id="myDropdown" class="dropdown-content">
-            <div id="myDropdown" class="dropdown-content">
-               <a style="font-size:12px" href="history.html#history"><b>History</b></a>
-               <a style="font-size:12px" href="history.html#quality"><b>Quality,Value&Concept</b></a>
-               <a style="font-size:12px" href="history.html#Certification"><b>Certification</b></a>
-             </div>
-         </div>
-       </div>
-      <a href="index.html#services">services</a>
-      <a href="index.html#projects">projects</a>
-      <!-- <a href="#pricing">pricing</a> -->
-      <a href="index.html#contact">contact</a>
-      <!-- <a href="#blogs">blogs</a> -->
-   </nav>
-
-   <div class="icons">
-    
-      <div id="info-btn" class="fas fa-info-circle"></div>
-      <div id="search-btn" class="fas fa-search"></div>
-      <div id="login-btn" class="fas fa-user"></div>
-      <div id="menu-btn" class="fas fa-bars"></div>
-     
-   </div>
-
-   <form action="" class="search-form">
-      <input type="search" name="" placeholder="search here..." id="search-box">
-      <label for="search-box" class="fas fa-search"></label>
-   </form>
-
-   <form action="" class="login-form">
-      <h3>login form</h3>
-      <input type="email" placeholder="enter your email" class="box">
-      <input type="password" placeholder="enter your password" class="box">
-      <div class="flex">
-         <input type="checkbox" name="" id="remember-me">
-         <label for="remember-me">remember me</label>
-         <a href="#">forgot password?</a>
+      <div class="icons">
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
       </div>
-      <input type="submit" value="login now" class="btn">
-      <p>don't have an account <a href="#">create one!</a></p>
-   </form>
 
-</header>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
 
-<div class="contact-info">
+      <form action="" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>don't have an account <a href="#">create one!</a></p>
+      </form>
+    </header>
 
-   <div id="close-contact-info" class="fas fa-times"></div>
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
 
-   <div class="info">
-      <i class="fas fa-phone"></i>
-      <h3>phone number</h3>
-      <p>+65 82993771</p>
-      <p>+65 63343503</p>
+      <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>phone number</h3>
+        <p>+65 82993771</p>
+        <p>+65 63343503</p>
+      </div>
 
-   </div>
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>email address</h3>
+        <p>qvcencpl@gmail.com</p>
+      </div>
 
-   <div class="info">
-      <i class="fas fa-envelope"></i>
-      <h3>email address</h3>
-      <p>qvcencpl@gmail.com</p>
-   </div>
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>office address</h3>
+        <p>mumbai, india - 400104</p>
+      </div>
 
-   <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <h3>office address</h3>
-      <p>mumbai, india - 400104</p>
-   </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
 
-   <div class="share">
-      <a href="#" class="fab fa-facebook-f"></a>
-      <a href="#" class="fab fa-twitter"></a>
-      <a href="#" class="fab fa-instagram"></a>
-      <a href="#" class="fab fa-linkedin"></a>
-   </div>
+    <!-- header section ends -->
 
-</div>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-<!-- 
+    <!-- home section starts  -->
+    <!-- 
 <section class="home" id="home">
 
    <div class="swiper home-slider">
@@ -151,38 +164,38 @@
 
 </section> -->
 
-<!-- home section ends -->
+    <!-- home section ends -->
 
-<!-- about section starts  -->
+    <!-- about section starts  -->
 
-<section class="about" id="history">
+    <section class="about" id="history">
+      <h1 class="heading">History</h1>
 
-   <h1 class="heading"> History </h1>
-
-   <div class="row">
-
-      <!-- <div class="video">
+      <div class="row">
+        <!-- <div class="video">
          <video src="images/about-vid.mp4" loop muted autoplay></video>
       </div> -->
 
-      <div class="content">
-         <!-- <h3>We will provide you the best work which you dreamt for!</h3> -->
-         <p>Established in 2010, QVC(Quality Value Concept) Engineering and construction is a Singapore-based company providing complete building envelope solutions. We take an integrated approach to provide design, build and supply solutions across Asia. Whether it’s unique structures, restoration or renovation projects, or curtain walls, our flexibility and experience enable us to anticipate challenges, find innovative solutions and deliver complete building envelope solutions with pride.
-
-            Whatever the project challenge, QVC takes an integrated approach to deliver the building envelope solution that meets your goal.
-            
-            Presently, QVC main areas of business for building envelopes are as follows:
-            
-            Building Envelopes
-            Customised Structures and Art Structures
-            Security Façade
-            Interior Fit-Outs
-            </p>
-         <!-- <a href="#services" class="btn">read more</a> -->
+        <div class="content">
+          <!-- <h3>We will provide you the best work which you dreamt for!</h3> -->
+          <p>
+            Established in 2010, QVC(Quality Value Concept) Engineering and
+            construction is a Singapore-based company providing complete
+            building envelope solutions. We take an integrated approach to
+            provide design, build and supply solutions across Asia. Whether it’s
+            unique structures, restoration or renovation projects, or curtain
+            walls, our flexibility and experience enable us to anticipate
+            challenges, find innovative solutions and deliver complete building
+            envelope solutions with pride. Whatever the project challenge, QVC
+            takes an integrated approach to deliver the building envelope
+            solution that meets your goal. Presently, QVC main areas of business
+            for building envelopes are as follows: Building Envelopes Customised
+            Structures and Art Structures Security Façade Interior Fit-Outs
+          </p>
+          <!-- <a href="#services" class="btn">read more</a> -->
+        </div>
       </div>
-
-   </div>
-<!-- 
+      <!-- 
    <div class="box-container">
 
       <div class="box">
@@ -206,160 +219,148 @@
       </div>
 
    </div> -->
+    </section>
+    <hr />
 
-</section>
-<hr>
+    <!-- about section ends -->
 
-<!-- about section ends -->
+    <!-- services section starts  -->
 
-<!-- services section starts  -->
+    <section class="about" id="quality">
+      <h1 class="heading">Quality</h1>
 
-<section class="about" id="quality">
-
-   <h1 class="heading"> Quality </h1>
-
-   <div class="row">
-
-   <div class="content">
-    <p>Quality objectives are the SMART goals for enhancing customer satisfaction and are relevant to the quality policy of the company. Quality objectives are defined when establishing the quality management system or during management review. It is also called a Key performance indicator. KPI shall be defined by each department.
-        </p>
-     
-      
-   </div>
-   </div>
-
-   <br>
-   <br>
-
-   <h1 class="heading"> Value</h1>
-
-   <div class="row">
-
-   <div class="content">
-    <p>Engineering and construction bring value by providing innovative and sustainable solutions for building and infrastructure projects, optimizing resources, reducing risks, ensuring quality and safety, and delivering projects on time and within budget, to meet the needs and expectations of clients and stakeholders.
-        </p>
-     
-      
-   </div>
-   </div>
-   <br>
-   <br>
-
-   <h1 class="heading"> Concept</h1>
-
-   <div class="row">
-
-   <div class="content">
-    <p>A company's business concept is about the direction and form of its operations. If it is apparent to you that the company's success lies in its intangible assets, think carefully about protecting them at an early stage. A business concept is a fundamental prerequisite for the existence of a company.
-        </p>
-     
-        
-   </div>
-   </div>
-
-</section>
-
-<!-- services section ends -->
-<hr>
-
-<section class="blogs" id="Certification">
-
-   <h1 class="heading"> Company Certification</h1>
-
-   <div class="swiper blogs-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <div class="image">
-               <img src="images/bcalogo.jpg" alt="">
-            </div>
-            <!-- <div class="content">
-               <h3>blog title goes here</h3>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
-               <a href="#" class="btn">read more</a>
-            </div> -->
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="image">
-                <img src="images/bss.png" alt="">
-            </div>
-            <!-- <div class="content">
-               <h3>blog title goes here</h3>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
-               <a href="#" class="btn">read more</a>
-            </div> -->
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="image">
-             <img src="images/IAS1.png" alt="">
-                
-            </div>
-            <!-- <div class="content">
-               <h3>blog title goes here</h3>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
-               <a href="#" class="btn">read more</a>
-            </div> -->
-         </div>
-
-         
-
+      <div class="row">
+        <div class="content">
+          <p>
+            Quality objectives are the SMART goals for enhancing customer
+            satisfaction and are relevant to the quality policy of the company.
+            Quality objectives are defined when establishing the quality
+            management system or during management review. It is also called a
+            Key performance indicator. KPI shall be defined by each department.
+          </p>
+        </div>
       </div>
 
-   </div>
-           <br>
-           <br>
-   <div class="swiper blogs-slider">
+      <br />
+      <br />
 
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slide">
+      <h1 class="heading">Value</h1>
+
+      <div class="row">
+        <div class="content">
+          <p>
+            Engineering and construction bring value by providing innovative and
+            sustainable solutions for building and infrastructure projects,
+            optimizing resources, reducing risks, ensuring quality and safety,
+            and delivering projects on time and within budget, to meet the needs
+            and expectations of clients and stakeholders.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <h1 class="heading">Concept</h1>
+
+      <div class="row">
+        <div class="content">
+          <p>
+            A company's business concept is about the direction and form of its
+            operations. If it is apparent to you that the company's success lies
+            in its intangible assets, think carefully about protecting them at
+            an early stage. A business concept is a fundamental prerequisite for
+            the existence of a company.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+    <hr />
+
+    <section class="blogs" id="Certification">
+      <h1 class="heading">Company Certification</h1>
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
             <div class="image">
-              <img src="images/iso-45001-2018.jpg" alt="">
-  
+              <img src="images/bcalogo.jpg" alt="" />
             </div>
             <!-- <div class="content">
                <h3>blog title goes here</h3>
                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
                <a href="#" class="btn">read more</a>
             </div> -->
-         </div>
-       <div class="swiper-slide slide">
-          <div class="image">
-             <img src="images/isonew.png" alt="">
           </div>
-          <!-- <div class="content">
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/bss.png" alt="" />
+            </div>
+            <!-- <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div> -->
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/IAS1.png" alt="" />
+            </div>
+            <!-- <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/iso-45001-2018.jpg" alt="" />
+            </div>
+            <!-- <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div> -->
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/isonew.png" alt="" />
+            </div>
+            <!-- <div class="content">
              <h3>blog title goes here</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
              <a href="#" class="btn">read more</a>
           </div> -->
-       </div>
-
-       <div class="swiper-slide slide">
-          <div class="image">
-            <img src="images/iso-9001-20151.jpg" alt="">
-
           </div>
-          <!-- <div class="content">
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/iso-9001-20151.jpg" alt="" />
+            </div>
+            <!-- <div class="content">
              <h3>blog title goes here</h3>
              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
              <a href="#" class="btn">read more</a>
           </div> -->
-       </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- blogs section ends -->
 
-    </div>
+    <!-- client logo section starts -->
 
- </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- client logo section starts -->
-
-<!-- <section class="logo-container">
+    <!-- <section class="logo-container">
    <div class="swiper logo-slider">
       <div class="swiper-wrapper">
          <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
@@ -372,48 +373,37 @@
    </div>
 </section> -->
 
-<!-- client logo section ends -->
+    <!-- client logo section ends -->
 
-<!-- footer section starts  -->
+    <!-- footer section starts  -->
 
-<section class="footer">
+    <section class="footer">
+      <div class="links">
+        <a class="btn" href="#home">home</a>
+        <a class="btn" href="#about">about</a>
+        <a class="btn" href="#services">services</a>
+        <a class="btn" href="#projects">projects</a>
+        <!-- <a class="btn" href="#pricing">pricing</a> -->
+        <a class="btn" href="#contact">contact</a>
+        <a class="btn" href="#blogs">blogs</a>
+      </div>
 
-   <div class="links">
-      <a class="btn" href="#home">home</a>
-      <a class="btn" href="#about">about</a>
-      <a class="btn" href="#services">services</a>
-      <a class="btn" href="#projects">projects</a>
-      <!-- <a class="btn" href="#pricing">pricing</a> -->
-      <a class="btn" href="#contact">contact</a>
-      <a class="btn" href="#blogs">blogs</a>
-   </div>
+      <div class="credit">
+        created by <span>VAS.S</span> | all rights reserved!
+      </div>
+    </section>
 
-   <div class="credit"> created by <span>VAS.S</span> | all rights reserved! </div>
+    <!-- footer section ends -->
 
-</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
-<!-- footer section ends -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
 
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-<script>
-
-lightGallery(document.querySelector('.projects .box-container'));
-
-</script>
-
-</body>
+    <script>
+      lightGallery(document.querySelector(".projects .box-container"));
+    </script>
+  </body>
 </html>

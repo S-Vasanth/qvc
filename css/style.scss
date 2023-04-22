@@ -683,7 +683,7 @@ section{
       .image{
          height: 25rem;
          width: 90%;
-         overflow: hidden;
+         // overflow: hidden;
          margin:0 auto;
          margin-bottom: -3rem;
 
@@ -887,3 +887,30 @@ section{
  /* Change the background color of the dropdown button when the dropdown content is shown */
  .dropdown:hover .dropbtn {background-color: white;}
  
+
+ #header {
+   position:relative;
+   padding:2rem;
+ }
+
+ #myDropdown {
+   padding:0.5rem;
+ }
+
+ @media only screen and (min-width: 600px) {
+ #logo {
+   position: absolute;
+   margin-left: 5rem;
+   margin-bottom: -8rem;
+   border: 2px solid #F57D24;
+   border-radius: 5px; 
+   height: 12rem;
+   width: 14rem;
+ }
+
+ #myDropdown {
+   a {
+      padding: 0.5rem;
+   }
+ }
+}
