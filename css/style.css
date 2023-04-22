@@ -811,7 +811,7 @@ section {
   padding: 2rem;
 }
 
-#myDropdown {
+#myDropdown a {
   padding: 0.5rem;
 }
 
@@ -825,8 +825,11 @@ section {
     height: 12rem;
     width: 14rem;
   }
+  #myDropdown {
+    padding: 1rem;
+  }
   #myDropdown a {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 

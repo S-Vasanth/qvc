@@ -894,8 +894,11 @@ section{
  }
 
  #myDropdown {
-   padding:0.5rem;
+   a {
+      padding: 0.5rem;
+   }
  }
+
 
  @media only screen and (min-width: 600px) {
  #logo {
@@ -909,8 +912,10 @@ section{
  }
 
  #myDropdown {
+   padding: 1rem;
    a {
-      padding: 0.5rem;
+      padding: 1rem;
    }
  }
+
 }
