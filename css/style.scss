@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --yellow:#f5bf23;
+   --yellow:hsl(26, 91%, 55%);
    --black:#111;
    --white:#fff;
    --light-color:#666;
@@ -256,9 +256,9 @@ section{
 }
 
 .contact-info{
-   margin-right: 489px;
+   // margin-right: 489px;
    position: fixed;
-   top: 192px;; right:0;
+   top: 0;right:0;
    width: 35rem;
    background: var(--white);
    height: 100%;
@@ -887,14 +887,18 @@ section{
  /* Change the background color of the dropdown button when the dropdown content is shown */
  .dropdown:hover .dropbtn {background-color: white;}
  
+
  #header {
    position:relative;
    padding:2rem;
  }
 
  #myDropdown {
-   padding:0.5rem;
+   a {
+      padding: 0.5rem;
+   }
  }
+
 
  @media only screen and (min-width: 600px) {
  #logo {
@@ -908,8 +912,10 @@ section{
  }
 
  #myDropdown {
+   padding: 1rem;
    a {
-      padding: 0.5rem;
+      padding: 1rem;
    }
  }
+
 }

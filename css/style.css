@@ -220,10 +220,8 @@ section {
 }
 
 .contact-info {
-  /* margin-right: 489px; */
   position: fixed;
-  /* top: 192px; */
- top: 0;
+  top: 0;
   right: 0;
   width: 35rem;
   background: var(--white);
@@ -253,19 +251,19 @@ section {
   padding: 2rem 0;
 }
 .contact-info .info i {
-  height: 5rem;
+  height: 3rem;
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  background: var(--light-bg);
+  /* background: var(--light-bg); */
   color: var(--black);
   cursor: pointer;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 .contact-info .info i:hover {
-  background: var(--black);
-  color: var(--white);
+  /* background: var(--black); */
+  color: var(--black);
 }
 .contact-info .info h3 {
   font-size: 2rem;
@@ -335,13 +333,6 @@ section {
   line-height: 2;
   padding: 1rem 0;
 }
-/* .home .slide .content h6{
-  margin-bottom: 300px;
-  font-size: 1rem;
-  color: black;
-  line-height: 2;
-  padding: 1rem 0;
-} */
 .home .swiper-button-next,
 .home .swiper-button-prev {
   top: initial;
@@ -815,4 +806,54 @@ section {
   background-color: white;
 }
 
+#header {
+  position: relative;
+  padding: 2rem;
+}
+
+#myDropdown a {
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #logo {
+    position: absolute;
+    margin-left: 5rem;
+    margin-bottom: -8rem;
+    border: 3px solid #F57D24;
+    border-radius: 5px;
+    height: 12rem;
+    width: 14rem;
+  }
+  #myDropdown {
+    padding: 1rem;
+  }
+  #myDropdown a {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #logo {
+    position: absolute;
+    margin-left: 5rem;
+    margin-bottom: -8rem;
+    border: 3px solid #F57D24;
+    border-radius: 5px;
+    height: 12rem;
+    width: 14rem;
+  }
+  #myDropdown {
+    padding: 1rem;
+  }
+  #myDropdown a {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */
+
